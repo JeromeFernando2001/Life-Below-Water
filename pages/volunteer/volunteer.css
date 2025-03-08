@@ -44,16 +44,15 @@ body {
   max-width: 80%;
   /*scrollbar-width: none;*/
   scroll-snap-type: x mandatory;
+
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-  /*height: 0px;*/
+  display: none;
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #0077B6;
-  border-radius: 10px;
-}
 
 /* Card Styles */
 .card {
