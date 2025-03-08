@@ -1,0 +1,143 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar (Top) */
+.nav-bar {
+  background-color: var(--primary-blue);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+/* Container for Logo and Navigation */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px;
+}
+
+/* Desktop Navigation (Menu) */
+.desktop-nav .navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--yellow);
+}
+
+/* Mobile Navigation Drawer */
+@media (max-width: 768px) {
+  /* Hide desktop navigation on mobile */
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Menu icon for mobile view */
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    padding-right: 10%;
+  }
+
+  /* Overlay (Slide-in Drawer) */
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially off-screen */
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    background: rgba(0, 0, 0, 0.9);
+    background-image: url('/src/assets/images/header/coral_reef.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align items */
+  }
+
+  .overlay.show {
+    right: 0; /* Slide in effect */
+  }
+
+  /* Overlay content */
+  .overlay-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .overlay .nav-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    transition: color 0.3s;
+  }
+
+  .overlay .nav-link:hover {
+    color: var(--yellow);
+  }
+
+  /* Close Button for Mobile Drawer */
+  .closeSideMenu {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+/* Desktop View (Above 768px) */
+@media (min-width: 768px) {
+  /* Hide the menu icon on desktop */
+  .menu-icon {
+    display: none;
+  }
+}

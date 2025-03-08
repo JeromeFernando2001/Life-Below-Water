@@ -1,0 +1,862 @@
+/* Profile Section */
+.profile-section {
+  background-color: var(--light-blue);
+  padding-top: 100px;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Profile Content Layout */
+.profile-content {
+  display: flex;
+  justify-content: space-between; /* Align text to start and image to end */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 3rem; /* Spacing between text and image */
+}
+
+/* Left Section (Text) */
+.profile-info {
+  flex: 1;
+  min-width: 400px;
+  text-align: left;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.profile-description {
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Contact Button */
+.btn-contact {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-contact:hover {
+  background-color: var(--dark-blue);
+  transform: translateY(-3px);
+}
+
+/* Right Section (Profile Image) */
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 350px; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .profile-content {
+    padding-top: 80px;
+    padding-bottom: 0;
+    flex-direction: column;
+    text-align: center;
+   }
+
+  .container {
+    max-width: 100%;
+    padding: 0 20px; /* Add padding to prevent content from touching screen edges */
+  }
+
+  .profile-info {
+    text-align: justify;
+    width: 100%;
+    min-width: unset; /* Allow flexibility */
+    padding: 20px;
+  }
+
+  .profile-name {
+    font-size: 2.5rem; /* Reduce size for better readability */
+  }
+
+  .profile-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btn-contact {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .profile-image {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+  }
+
+  .profile-image img {
+    max-width: 300px; /* Reduce image size on smaller screens */
+    border-radius: 10px;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 425px) {
+  .profile-section {
+    padding: 20px 0;
+  }
+
+  .profile-content {
+    gap: 1.5rem;
+    align-items: flex-start; /* Ensures everything is left-aligned */
+    text-align: left; /* Aligns text to the left */
+  }
+
+  .profile-info {
+    text-align: left; /* Make sure text is left-aligned */
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-description {
+    font-size: 0.95rem;
+  }
+
+  .btn-contact {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .profile-image {
+    display: flex;
+    justify-content: flex-start; /* Ensures image container aligns left */
+    width: 100%;
+  }
+
+  .profile-image img {
+    max-width: 320px;
+    display: block; /* Ensures it follows flexbox properly */
+    margin: 0 20px;
+  }
+}
+
+
+
+/* Section 2 */
+/* About Section */
+.about-section {
+  background-color: var(--pearl-white);  
+}
+
+/* About & Skills Layout */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 100%;
+  max-width: 1200px;
+  padding: 5rem 0;
+}
+
+/* Left Section: About */
+.about-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: var(--primary-blue);
+  padding: 1rem 0;
+}
+
+/* About List */
+.about-list {
+  list-style: none;
+  padding: 0;
+  min-width: 300px;
+  font-size: 1rem;
+}
+
+.about-list li {
+  font-size: 1rem;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.list-icon {
+  color: var(--dark-yellow);
+  margin-right: 10px;
+}
+
+/* Right Section: Skills */
+.skills-info {
+  flex: 1;
+  max-width: 500px;
+  /* background-color: bisque; */
+}
+
+/* Skill Bars */
+.skill {
+  flex: 1;
+  margin-bottom: 1.3rem;
+}
+
+.skill p {
+  font-weight: 500;
+}
+
+.progress-bar {
+  background-color: var(--dark-yellow);
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  z-index: 2;
+  margin-top: -0.5rem;
+}
+
+.progress-fill {
+  background-color: var(--primary-blue);
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  /* About & Skills Layout */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Left Section: About */
+.about-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+  .about-info,
+  .skills-info {
+    width: 100%;
+    flex: 1;
+    min-width: 350px !important;
+    padding: 20px;
+  }
+
+  .section-title,
+  .skill-description {
+    text-align: start;
+  }
+}
+
+
+/* Goals Section */
+.goals-section {
+  background-color: var(--pearl-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+/* Grid layout */
+.goals-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Auto-fit for responsiveness */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center; /* Centers grid items */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Ensures centering */
+}
+
+/* Card Layout */
+.goal-card {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  max-width: 300px;
+  margin: 0 auto; /* Centers the cards within the grid */
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.goal-image {
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block; /* asdfsdf*/
+}
+
+/* Card Content */
+.goal-content {
+  position: absolute;
+  bottom: 10px; /* Adjust to overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-content h3 {
+  font-size: 18px;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.goal-content p {
+  font-size: 13px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.goal-icon {
+  width: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Grid layout */
+  .goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .goal-card {
+    width: 100%; /* Adjust as needed */
+    max-width: 300px;
+  }
+
+  .goal-content {
+    width: 90%;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .goals-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .goal-content {
+    bottom: 20px;
+  }
+}
+
+
+/* Calendar Section */
+.content-heading h3 {
+  font-size: 1.3rem;
+  font-weight: 400px;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.calendar-section {
+  background-color: var(--primary-blue);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+/* Layout */
+.calendar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items on small screens */
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Calendar */
+.calendar-wrapper {
+  flex: 1;
+  min-width: 320px; /* Slightly larger for better touch usability */
+  max-width: 500px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Calendar Controls */
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-blue);
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+
+.calendar-controls p {
+  color: var(--pearl-white);
+  padding-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.calendar-controls button {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  padding: 0.5rem;
+  margin: 0 0.8rem;
+  width: 5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Week Row */
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weekday-label {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Date Button Styles */
+.calendar-date {
+  width: 98%;
+  padding: 5px;
+  text-align: center;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calendar-date:hover {
+  background-color: #e0e0e0;
+}
+
+.calendar-date:active {
+  background-color: var(--dark-blue);
+}
+
+/* Event List */
+.event-list {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  padding: 20px;
+  background: var(--primary-blue);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+/* Event Details */
+.event-list h3 {
+  margin-bottom: 10px;
+}
+
+#event-details {
+  list-style: none;
+  padding: 0;
+}
+
+#event-details li {
+  background: var(--dark-blue);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets (Max-width: 768px) */
+@media (max-width: 768px) {
+  .calendar-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content-heading h4 {
+    font-size: 20px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr)); /* Ensuring columns are readable */
+  }
+}
+
+/* Mobile Screens (Max-width: 575px) */
+@media (max-width: 425px) {
+  .calendar-content {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .calendar-wrapper {
+    width: 100%;
+    min-width: 320px;
+    min-height: 400px; /* Increased height to ensure visibility */
+    padding-bottom: 20px;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    min-height: 250px; /* Give enough space for the dates to render */
+  }
+
+  .calendar-date {
+    font-size: 8px; /* Smaller font for mobile */
+    padding: 8px;
+  }
+
+  .content-heading h4 {
+    font-size: 16px;
+  }
+
+  .calendar-controls {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .calendar-controls p {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Section 5 Un Goals I Support */
+.un-goals {
+  background-color: var(--pearl-white);
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading */
+
+.un-goals-heading h3 {
+  font-size: 1.5rem;
+  font-weight: 400px;
+  color: var(--primary-blue);
+  text-align: center;
+}
+
+/* Container */
+.un-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.un-goal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; 
+  flex-wrap: wrap; 
+  max-width: 1600px; /* Limits the width */
+  margin: auto;
+}
+
+/* Goal Images */
+.un-goal-image {
+  flex: 1;
+  max-width: 180px; /* Keeps image sizes equal */
+  text-align: center;
+  padding: 5px;
+}
+
+.un-goal-image img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.un-goal-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .un-goal-container {
+    gap: 20px;
+  }
+
+  .un-goal-image {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .un-container {
+    width: 80%;
+    max-width: 480px;
+    margin: auto;
+  }
+
+  .un-goals-heading h3 {
+    text-align: center;
+  }
+
+  .un-goal-container {
+    flex-direction: column;   
+    align-items: center;
+    /* grid-template-columns: repeat(2, minmax(30px, 1fr)); */
+  }
+
+  .un-goal-image {
+    max-width: 180px;
+  }
+
+  /* Hover Effect */
+.un-goal-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: var(--gray);
+}
+
+/* Contact Form Container */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Contact Details (Left Side) */
+.contact-form-details {
+  flex: 1;
+  padding: 3rem;
+  background-color: var(--primary-blue);
+  color: var(--pearl-white);
+  /* border-radius: 10px; */
+  text-align: start;
+  min-width: 350px;
+}
+
+.contact-form-details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-form-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form-details .user-bio h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-details .user-bio p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Contact Form (Right Side) */
+.contact-form-content {
+  flex: 1;
+  background-color: var(--pearl-white);
+  padding: 3rem;
+  /* border-radius: 10px; */
+  min-width: 350px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form-content label {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form-content input,
+.contact-form-content textarea {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid var(--gray);
+  /* border-radius: 5px; */
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--gray);
+  transition: border 0.3s ease-in-out;
+}
+
+.contact-form-content input:focus,
+.contact-form-content textarea:focus {
+  border-color: var(--dark-blue);
+}
+
+/* Submit Button */
+.form-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--gray);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-submit-btn:hover {
+  background-color: var(--primary-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-details,
+  .contact-form-content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .contact-form-details h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-form-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-form-details h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form-content input,
+  .contact-form-content textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .form-submit-btn {
+    font-size: 0.9rem;
+  }
+}
