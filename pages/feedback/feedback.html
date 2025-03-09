@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
-    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="./feedback.css">
     <link rel="stylesheet" href="../../styles/style.css">
 </head>
 <body>
@@ -91,7 +91,19 @@
             </form>
         </div>
     </section>
-    
-    <script src="feedback.js"></script>
+
+  <script>
+      document.getElementById("feedback-form").addEventListener("submit", function(event) {
+          event.preventDefault();  // Prevent form submission for now
+
+          // Show an alert message
+          alert("Thank you for your feedback! We appreciate your time and effort.");
+
+          // Optionally, you can uncomment this line to submit the form after the alert
+          // this.submit();  // Uncomment this if you want the form to actually submit after the alert.
+      });
+  </script>
+
+    <script src="./../../global.js"></script>
 </body>
 </html>
