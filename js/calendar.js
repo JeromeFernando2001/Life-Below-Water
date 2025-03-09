@@ -78,6 +78,13 @@ function initializeCalendar() {
       ).padStart(2, "0")}`;
       dateButton.dataset.date = dateKey;
 
+      // Add dot for dates with events
+      if (events[dateKey]) {
+        const eventDot = document.createElement("div");
+        eventDot.classList.add("event-dot"); // Add dot styling
+        dateButton.appendChild(eventDot); // Append dot inside the button
+      }
+
       dateButton.addEventListener("click", function () {
         selectedDateText.textContent = dateKey;
         eventDetails.innerHTML = "";
@@ -111,3 +118,7 @@ function initializeCalendar() {
 
   renderCalendar();
 }
+
+window.onload = function () {
+  initializeCalendar();
+};
