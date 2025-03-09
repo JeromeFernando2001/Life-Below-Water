@@ -36,14 +36,14 @@
 }
 
 .logo1, .logo2 {
-    width: 150px; /* Increase size */
+    width: 150px;
     height: auto;
-    filter: brightness(2) contrast(1.2); /* Brighten the logos */
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); /* White glow */
+    filter: brightness(2) contrast(1.2); 
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); 
     padding: 10px;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
-    border-radius: 10px; /* Rounded corners */
-    margin: 10px; /* Space between logos */
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    margin: 10px; 
 
 }
 
@@ -105,70 +105,70 @@ h2 {
 /* Tablet view (Portrait) */
 @media (max-width: 768px) {
     h1 {
-        font-size: 50px; /* Smaller heading */
+        font-size: 50px; 
     }
 
     h2 {
-        font-size: 20px; /* Smaller subheading */
+        font-size: 20px;
     }
 
     .description {
-        font-size: 16px; /* Smaller description text */
-        width: 90%; /* Slightly wider text area */
+        font-size: 16px; 
+        width: 90%; 
     }
 
     .team {
-        font-size: 16px; /* Smaller team text */
+        font-size: 16px;
     }
 
     .logo1, .logo2 {
-        width: 120px; /* Slightly smaller logos */
+        width: 120px; 
     }
 
     .content {
-        padding: 20px; /* Less padding */
+        padding: 20px; 
     }
 }
 
 /* Mobile view (Portrait) */
 @media (max-width: 480px) {
     h1 {
-        font-size: 30px; /* Even smaller heading */
+        font-size: 30px; 
     }
 
     h2 {
-        font-size: 18px; /* Smaller subheading */
+        font-size: 18px; 
     }
 
     .description {
-        font-size: 14px; /* Smaller description text */
-        width: 95%; /* Almost full-width text area */
+        font-size: 14px; 
+        width: 95%; 
     }
 
     .team {
-        font-size: 14px; /* Smaller team text */
+        font-size: 14px; 
     }
 
     .logo1, .logo2 {
-        width: 100px; /* Even smaller logos */
+        width: 100px; 
     }
 
     .content {
-        padding: 15px; /* Less padding */
+        padding: 15px; 
     }
 }
 
 /* Large screens (optional) */
 @media (min-width: 1200px) {
     .logo1, .logo2 {
-        width: 180px; /* Larger logos on big screens */
+        width: 180px; 
     }
 
     h1 {
-        font-size: 90px; /* Bigger heading for large screens */
+        font-size: 90px;
     }
 
     .description {
-        font-size: 22px; /* Larger description text */
+        font-size: 22px; 
     }
 }
