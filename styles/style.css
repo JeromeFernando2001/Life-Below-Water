@@ -15,7 +15,7 @@
   --font-secondary: "Inter", sans-serif;
   --font-tertiary: "Nunito", sans-serif;
 
-  --font-size-body: 13px;
+  --font-size-body: 1rem;
   --line-height-body: 1.8;
   --letter-spacing: 0.5px;
 
@@ -41,12 +41,6 @@ body {
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 p {

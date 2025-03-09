@@ -1,12 +1,6 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', Inter;
-}
 
 /* Fullscreen background */
 .splash-container {
@@ -18,6 +12,17 @@
     align-items: center;
     text-align: center;
     position: relative;
+}
+
+.splash-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--primary-blue-rgb), 0.6);
+    z-index: 0;
 }
 
 /* Content Box */
