@@ -1,18 +1,97 @@
-<link rel="stylesheet" href="/src/pages/feedback/feedback.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+<body>
+  <div class="header"></div>
+    <section class="feedback-section">
+        <div class="feedback-content">
+            <h2>Your Feedback Matters!</h2>
+            <p>We value your input and strive to improve our services.</p>
+            
+            <form id="feedback-form">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
 
-<!-- Feedback form with some content, a modal and a form with multiple steps  -->
-<section class="feedback-section">
-  <div class="feedback-content">
-    <div class="section-one">
-      <div class="feedback-description">
-        <h2>Your Voice Matters!</h2>
-        <p>content here...</p>
-      </div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-      <div class="feedback-image">
-        <img src="/src/assets/images/feedback/feedback.jpg" alt="we value your feedback">
-      </div>
-    </div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
 
-  </div>
-</section>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="rating">Rate Our Service:</label>
+                    <div class="rating">
+                        <input type="radio" id="rating1" name="rating" value="1">
+                        <label for="rating1">&#128545;</label>
+    
+                        <input type="radio" id="rating2" name="rating" value="2">
+                        <label for="rating2">&#128577;</label>
+    
+                        <input type="radio" id="rating3" name="rating" value="3">
+                        <label for="rating3">&#128528;</label>
+    
+                        <input type="radio" id="rating4" name="rating" value="4">
+                        <label for="rating4">&#128522;</label>
+    
+                        <input type="radio" id="rating5" name="rating" value="5">
+                        <label for="rating5">&#128525;</label>
+                    </div>
+
+                  
+                    <label for="feedback">Comments:</label>
+                    <textarea id="feedback" name="feedback" rows="4" maxlength="300" required></textarea>
+                    <p id="char-count">300 characters remaining</p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <label for="service-satisfaction">How satisfied are you?</label>
+                    <select id="service-satisfaction" name="service-satisfaction">
+                        <option value="1">1 - Not Satisfied</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Neutral</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10 - Extremely Satisfied</option>
+                    </select>
+                    
+                    <label>Would you recommend us?</label>
+                    <input type="radio" name="recommend" value="yes" required> Yes
+                    <input type="radio" name="recommend" value="no"> No
+                    
+                    <label>Preferred Contact Method:</label>
+                    <select id="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="none">No Contact</option>
+                    </select>
+                    
+                    <label for="attachment">Upload an Attachment:</label>
+                    <input type="file" id="attachment" name="attachment">
+                </fieldset>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="feedback.js"></script>
+</body>
+</html>
