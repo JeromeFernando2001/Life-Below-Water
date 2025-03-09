@@ -26,8 +26,6 @@
   align-items: center;
   width: 100%;
   border: 0.3rem solid var(--primary-blue);
-  background-color: var(--light-blue);
-  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -39,7 +37,7 @@
   align-items: start;
   padding: 10px;
   max-width: 600px;
-  /* background-color: var(--primary-blue); */
+
 }
 
 .greeting {
@@ -90,14 +88,14 @@
   justify-content: center; 
   align-items: center;
   padding: 2rem;
-  background-color: var(--light-blue);
+  background-color: var(--primary-blue);
 }
 
 .profile-image img {
-  width: 80%; /* Reduce width */
-  height: 70vh; /* Increase height */
-  object-fit: cover; /* Ensures the image scales properly without distortion */
-  object-position: center; /* Centers the image within the container */
+  width: 80%; 
+  height: 70vh; 
+  object-fit: cover; 
+  object-position: center; 
 }
 
 /* Mobile Screen */
@@ -243,7 +241,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 /* Grid layout */
@@ -342,7 +341,7 @@
 .calendar-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center items on small screens */
+  justify-content: center; 
   align-items: flex-start;
   width: 100%;
 }
@@ -350,7 +349,7 @@
 /* Calendar */
 .calendar-wrapper {
   flex: 1;
-  min-width: 320px; /* Slightly larger for better touch usability */
+  min-width: 320px; 
   max-width: 500px;
   background: var(--white);
   padding: 20px;
@@ -365,7 +364,6 @@
   align-items: center;
   background-color: var(--primary-blue);
   border-radius: 10px;
-  /* padding: 10px; */
 }
 
 .calendar-controls p {
@@ -464,7 +462,6 @@
   border-radius: 5px;
 }
 
-/* Mobile Screens (Max-width: 575px) */
 @media (max-width: 545px) {
   .calendar-content {
     flex-direction: row !important;
@@ -474,7 +471,7 @@
   .calendar-wrapper {
     width: 100%;
     min-width: 320px;
-    min-height: 400px; /* Increased height to ensure visibility */
+    min-height: 400px; 
     padding-bottom: 20px;
   }
 
@@ -482,11 +479,11 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    min-height: 250px; /* Give enough space for the dates to render */
+    min-height: 250px; 
   }
 
   .calendar-date {
-    font-size: 8px; /* Smaller font for mobile */
+    font-size: 8px; 
     padding: 8px;
   }
 
@@ -504,8 +501,6 @@
   }
 }
 
-
-/* Section 5 Un Goals I Support */
 .un-goals {
   background-color: var(--pearl-white);
   padding: 60px 0;
@@ -517,7 +512,6 @@
 }
 
 /* Heading */
-
 .un-goals-heading h3 {
   font-size: 1.5rem;
   font-weight: 400px;
