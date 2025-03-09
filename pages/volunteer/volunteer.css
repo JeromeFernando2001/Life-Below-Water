@@ -42,18 +42,20 @@ body {
   overflow-x: auto;
   padding-bottom: 10px;
   max-width: 80%;
-  /*scrollbar-width: none;*/
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   scroll-snap-type: x mandatory;
 }
 
 .scroll-container::-webkit-scrollbar {
-  /*height: 0px;*/
+  /* height: 0px; */
+  display: none;
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
+/* .scroll-container::-webkit-scrollbar-thumb {
   background: #0077B6;
   border-radius: 10px;
-}
+} */
 
 /* Card Styles */
 .card {
@@ -364,3 +366,4 @@ h2 {
     width: 100%;
     margin-top: 10px;
   }
+}
