@@ -9,7 +9,7 @@
 
 /* Entry Section */
 .entry-container {
-    background-image: url('../../img/Plastic\ ocean.jpg');
+    background-image: url('../Student1/Images/Plastic\ ocean.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 20px;
@@ -58,6 +58,33 @@ button:hover {
     background-color: #FB8500;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(45deg, #0077b6, #00b4d8);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 /* Causes and Effects */
 .causes-effects {
     padding: 40px;
@@ -92,7 +119,7 @@ p {
 }
 
 .solutions-text {
-    flex: 1;
+    width: 25%;
     padding: 20px;
 }
 
@@ -115,7 +142,6 @@ p {
 }
 
 .solutions-image {
-    flex: 1;
     text-align: center;
 }
 
