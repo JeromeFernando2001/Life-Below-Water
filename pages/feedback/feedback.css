@@ -16,7 +16,7 @@ body, html {
 }
 
 .feedback-content {
-  background: rgb(43, 52, 226);
+  background: rgb(212, 217, 233);
   padding: 2rem;
   width: 100%; /* Ensure content fits within viewport */
   max-width: 800px;
