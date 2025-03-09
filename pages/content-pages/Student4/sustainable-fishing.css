@@ -29,7 +29,7 @@
 }
 
 .image-section {
-  background: url("../../assets/images/content/sustainable-fishing/sustainable-fishin.jpg")
+  background: url("../Student4/Images/sustainable-fishin.jpg")
     no-repeat center center/cover;
   padding: 50px;
   text-align: center;
@@ -115,7 +115,7 @@
   }
 }
 
-/* .image-section {
+/*.image-section {
   width: 100%;
   height: 100vh;
   background: url("../../assets/images/home/sustainable-fishin.jpg") no-repeat
