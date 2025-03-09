@@ -1,15 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("app.js is running!");
-
-  const contentDiv = document.getElementById("content");
-
-  if (!contentDiv) {
-    console.error("Content div not found in the parent document!");
-    return;
-  }
-
-  console.log("Content div found! Ready to load content.");
-
   function loadContent(page) {
     const pagePath = `/src/pages/${page}/${page}.html`;
     fetch(pagePath)
