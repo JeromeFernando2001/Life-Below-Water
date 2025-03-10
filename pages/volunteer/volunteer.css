@@ -1,3 +1,7 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
 /* Global Styles */
 body {
   font-family: 'Poppins';
@@ -48,14 +52,10 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar {
-  /* height: 0px; */
   display: none;
 }
 
-/* .scroll-container::-webkit-scrollbar-thumb {
-  background: #0077B6;
-  border-radius: 10px;
-} */
+
 
 /* Card Styles */
 .card {
@@ -65,7 +65,7 @@ body {
   width: 320px;
   text-align: center;
   padding: 15px;
-  position: relative; /* Needed for heart icon */
+  position: relative; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,15 +101,15 @@ body {
 /* Location Container */
 .location {
   display: flex;
-  align-items: center;
-  gap: 8px; /* Space between flag and text */
+  align-items: baseline;
+  gap: 8px; 
 }
 
 /* Flag Icon Styling */
 .flag-circle {
-  width: 24px;  /* Adjust size */
+  width: 24px;  
   height: 24px;
-  border-radius: 50%; /* Makes the flag circular */
+  border-radius: 50%; 
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@ body {
 
 /* Flag Icon Inside Circle */
 .flag-icon {
-  font-size: 24px !important;  /* Adjust size */
+  font-size: 24px !important;  
   line-height: 24px !important;
   display: inline-block !important;
 }

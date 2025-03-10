@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="/css/style.css"/>
-<link rel="stylesheet" href="/src/pages/statistics/statistics.css"/>
+<link rel="stylesheet" href="./../../styles/style.css"/>
+<link rel="stylesheet" href="./statistics.css"/>
 
-<div class="container">
+<div class="container1">
   <section class="intro">
     <h1>Life Below Water: Marine Conservation Data</h1>
     <p>
@@ -16,70 +16,78 @@
     <table class="responsive-table" aria-label="Marine Conservation Data Table">
       <thead>
       <tr>
-        <th>
-          Coral Reef
-        </th>
-        <th>
-          Marine Species
-        </th>
-        <th>
-          Pollution Levels
-        </th>
-
+        <th colspan="2">Coral Reef</th>
+        <th>Marine Species</th>
+        <th>Pollution Levels</th>
+        <th>Learn More</th>
+      </tr>
+      <tr>
+        <th class="thumbnail">Image</th>
+        <th>Reef Name</th>
+        <th>Species Count</th>
+        <th>Pollution</th>
+        <th>More Info</th>
       </tr>
       </thead>
       <tbody>
       <tr>
+        <td><img src="./../../assets/images/table/greatBarrier.jpg" alt="Great Barrier Reef" class="thumbnail" /></td>
         <td>Great Barrier Reef</td>
         <td>1500 species</td>
         <td>Low &#x2705;</td>
-<!--        <td>Protected area - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.gbrmpa.gov.au/" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/redocoral.jpg" alt="Red Sea Coral Reef" class="thumbnail" /></td>
         <td>Red Sea Coral Reef</td>
         <td>1200 species</td>
         <td>Moderate &#x26A0;</td>
-<!--        <td>Active conservation - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.redseacoralreef.com" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/mesmo.jpg" alt="Mesoamerican Reef" class="thumbnail" /></td>
         <td>Mesoamerican Reef</td>
         <td>1100 species</td>
         <td>High &#x274C;</td>
-<!--        <td>Restoration underway - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.mesoamericanreef.org" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/andros.jpg" alt="New Caledonian Barrier Reef" class="thumbnail" /></td>
         <td>New Caledonian Barrier Reef</td>
         <td>1300 species</td>
         <td>Low &#x2705;</td>
-<!--        <td>Marine reserve - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.newcaledonia.com/reef" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/and.jpg" alt="Andros Barrier Reef" class="thumbnail" /></td>
         <td>Andros Barrier Reef</td>
         <td>950 species</td>
         <td>Moderate &#x26A0;</td>
-<!--        <td>Sustainable management - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.androsreef.org" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/florida.jpg" alt="Florida Reef" class="thumbnail" /></td>
         <td>Florida Reef</td>
         <td>800 species</td>
         <td>High &#x274C;</td>
-<!--        <td>Recovery program - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.floridacorals.org" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/Tbu.jpg" alt="Tubbataha Reefs" class="thumbnail" /></td>
         <td>Tubbataha Reefs</td>
         <td>700 species</td>
         <td>Low &#x2705;</td>
-<!--        <td>Strict protection - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.tubbatahareefs.org" target="_blank">Learn More</a></td>
       </tr>
       <tr>
+        <td><img src="./../../assets/images/table/bonarie.jpg" alt="Bonaire Marine Park" class="thumbnail" /></td>
         <td>Bonaire Marine Park</td>
         <td>650 species</td>
         <td>Moderate &#x26A0;</td>
-<!--        <td>Conservation zone - <a href="#" class="link">Learn More</a></td>-->
+        <td><a href="https://www.bonairemarinepark.org" target="_blank">Learn More</a></td>
       </tr>
-
       <tr>
-        <td colspan="4">
+        <td colspan="5">
           Note: Data is indicative and reflects ongoing environmental assessments and conservation efforts.
         </td>
       </tr>
@@ -87,5 +95,3 @@
     </table>
   </section>
 </div>
-
-
