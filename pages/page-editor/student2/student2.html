@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Lasath Rathnayake</title>
+    <link rel="stylesheet" href="./../../../styles/style.css">
+    <link rel="stylesheet" href="./student2.css">
+</head>
+<body>
+
+<!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="./../../../pages/home/home.html" target="_blank">Home</a></li>
+        <li><a href="../../../template/index.html" target="_blank">Navbar & Template</a></li>
+        <li><a href="./../../../pages/statistics/statistics.html" target="_blank">Table Page</a></li>
+        <li><a href="./../../../pages/page-editor/student2/student2.html" target="_blank">Content Page (Student 2)</a></li>
+        <li><a href="validation.html#table-validation" target="_blank">Validation</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Page Overview -->
+    <section>
+        <h2>Page Editor - Lasath Rathnayake</h2>
+        <p><strong>Role:</strong> Frontend Developer</p>
+        <h3>Pages Implemented</h3>
+        <ul>
+            <li>Global CSS</li>
+            <li>Navbar & Template</li>
+            <li>Footer</li>
+            <li>Content Page (Student 2)</li>
+            <li>Page Editor</li>
+            <li>Validation Page</li>
+            <li>Home Page</li>
+        </ul>
+    </section>
+
+    <!-- Technical Breakdown -->
+    <section>
+        <h2>Technical Description</h2>
+
+        <h3>Navbar & Template</h3>
+        <p>
+            The navigation bar was implemented using an <code>&lt;iframe&gt;</code> to dynamically load different content sections.
+            The navigation links update the <code>iframe</code> source dynamically, which improves performance and prevents full page reloads.
+        </p>
+        <p>
+            To enhance responsiveness, a **burger menu** was added, which collapses into a dropdown on smaller screens.
+            CSS media queries handle the layout adjustments, ensuring smooth navigation across devices.
+        </p>
+
+        <h3>Home Page</h3>
+        <p>
+            The **home page** was structured using **flexbox containers and cards** to display content efficiently. Each card contains images,
+            text, and buttons, styled using CSS Grid to ensure a responsive design.
+        </p>
+        <p>
+            Navigation within the home page is implemented using JavaScript <code>onClick</code> events,
+            which dynamically load content into the <code>iframe</code> without refreshing the page.
+        </p>
+
+        <h3>Table Page</h3>
+        <p>
+            The table page was structured using the **HTML table element**, with additional features like:
+        <ul>
+            <li>**Merged cells** using <code>colspan</code> and <code>rowspan</code> for better readability.</li>
+            <li>**Icons and links** for interactive elements.</li>
+            <li>**Hover effects and alternating row colors** using CSS.</li>
+        </ul>
+        </p>
+        <p>
+            The table design follows accessibility principles, ensuring good contrast, proper padding, and scalable font sizes.
+        </p>
+    </section>
+
+    <!-- Challenges & Lessons Learned -->
+    <section>
+        <h2>Challenges & Lessons Learned</h2>
+        <p>
+            <strong>1. Team Collaboration:</strong> Coordinating with multiple team members was challenging due to different coding styles.
+            We overcame this by following a **consistent naming convention** and using comments for clarity.
+        </p>
+        <p>
+            <strong>2. Dynamic Content Loading:</strong> Initially, we used traditional navigation but switched to **iframe-based dynamic loading**
+            to enhance performance. This required restructuring our navigation logic.
+        </p>
+        <p>
+            <strong>3. Responsive Design Issues:</strong> The original navbar was not fully responsive. We implemented **CSS media queries**
+            and a **burger menu** to resolve this.
+        </p>
+    </section>
+
+    <!-- Accessibility Considerations -->
+    <section>
+        <h2>Accessibility</h2>
+        <p>
+            Accessibility was a priority, and we followed **WCAG guidelines** by:
+        <ul>
+            <li>Using **semantic HTML** elements (<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, etc.).</li>
+            <li>Ensuring proper **color contrast** for readability.</li>
+            <li>Adding **ARIA labels** for assistive technologies.</li>
+            <li>Supporting **keyboard navigation** for all interactive elements.</li>
+        </ul>
+        </p>
+    </section>
+
+    <!-- Compliance & Security -->
+    <section>
+        <h2>Compliance</h2>
+        <p>
+            Our development followed best practices for **security, ethical development, and copyright compliance**, including:
+        <ul>
+            <li>Using **HTTPS** to ensure secure connections.</li>
+            <li>Referencing external resources with proper citations.</li>
+            <li>Following **clean coding** principles to maintain readability.</li>
+            <li>Ensuring **inclusive design** to accommodate all users.</li>
+        </ul>
+        </p>
+    </section>
+
+    <!-- References -->
+    <section class="references">
+        <h2>References</h2>
+        <ul>
+            <li>W3C Web Accessibility Guidelines</li>
+            <li>Mozilla Developer Network (MDN)</li>
+            <li>Lecture Notes on Web Development</li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

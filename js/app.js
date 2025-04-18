@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Load header and footer into iframes
-  loadFrame("header-frame", "/src/components/header/header.html");
-  loadFrame("footer-frame", "/src/components/footer/footer.html");
+  loadFrame("header-frame", "/src/pages/header/header.html");
+  loadFrame("footer-frame", "/src/pages/footer/footer.html");
 
   const iframe = document.getElementById("header-frame");
   iframe.onload = function () {

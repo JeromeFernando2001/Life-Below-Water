@@ -1,0 +1,150 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+    background-color: var(--primary-blue, #2b5a8e);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.desktop-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.desktop-nav li {
+    margin-right: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: var(--yellow, #f1c40f);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link:active {
+    color: var(--dark-yellow, #fb8500);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+
+.mobile-nav {
+    display: none;
+}
+
+#hamburger-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-image: url(../../assets/images/header/coral_reef.jpg);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+
+@media (min-width: 768px) {
+    .drawer {
+        display: none;
+    }
+}
+
+.drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.drawer li {
+    width: 100%;
+}
+
+.drawer a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.drawer a:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    #hamburger-icon {
+        font-size: 30px;
+    }
+}

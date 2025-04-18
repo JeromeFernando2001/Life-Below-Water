@@ -97,3 +97,7 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+#content-container {
+  margin-top: 8.8vh; /* Adjust this value as needed */
+}
