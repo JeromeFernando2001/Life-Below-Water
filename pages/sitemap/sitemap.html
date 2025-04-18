@@ -1,51 +1,253 @@
 <link rel="stylesheet" href="sitemap.css">
+<link rel="stylesheet" href="../../styles/style.css" />
 
 <section>
-    <div class="sitemap-container">
-        <svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
-            <!-- Root Node -->
-            <rect x="250" y="20" width="100" height="40" fill="#4CAF50" stroke="#333" rx="5" />
-            <text x="270" y="45" fill="white" font-size="14">Root</text>
+    <div class="sitemap_background">
 
-            <!-- Main Pages -->
-            <rect x="100" y="100" width="100" height="40" fill="#2196F3" stroke="#333" rx="5" />
-            <text x="130" y="125" fill="white" font-size="14">Home</text>
+        <div class="sitemap_content">
 
-            <rect x="250" y="100" width="100" height="40" fill="#FF9800" stroke="#333" rx="5" />
-            <text x="270" y="125" fill="white" font-size="14">Profile</text>
+            <!-- Responsive SVG for mobile -->
+            <svg id="svg-background" width="100%" height="100%" viewBox="0 0 100 50">
+                <!-- Define Button Labels -->
+                <text class="sitemap_h3" x="50%" y="2%"> Life Below Water </text>
 
-            <rect x="400" y="100" width="100" height="40" fill="#E91E63" stroke="#333" rx="5" />
-            <text x="420" y="125" fill="white" font-size="14">Statistics</text>
+                <!-- path  -->
+                <!-- <line class="connector" x1="80" y1="50" x2="55" y2="50" /> -->
+                <line x1="50%" y1="6%" x2="50%" y2="3%" class="connector" />
+                <line x1="10%" y1="6%" x2="90%" y2="6%" class="connector" />
 
-            <rect x="100" y="180" width="100" height="40" fill="#9C27B0" stroke="#333" rx="5" />
-            <text x="120" y="205" fill="white" font-size="14">Volunteer</text>
+                <line x1="10%" y1="6%" x2="10%" y2="10%" class="connector" />
+                <line x1="26%" y1="6%" x2="26%" y2="10%" class="connector" />
+                <line x1="42%" y1="6%" x2="42%" y2="10%" class="connector" />
+                <line x1="58%" y1="6%" x2="58%" y2="10%" class="connector" />
+                <line x1="74%" y1="6%" x2="74%" y2="10%" class="connector" />
+                <line x1="90%" y1="6%" x2="90%" y2="10%" class="connector" />
 
-            <rect x="250" y="180" width="100" height="40" fill="#FF5722" stroke="#333" rx="5" />
-            <text x="270" y="205" fill="white" font-size="14">Feedback</text>
+                <a xlink:href="../home/home.html" target="_blank">
+                    <g transform="translate(5,5)" class="parent_nodes">
+                        <rect class="pages_rect" x="0%" y="0%"></rect>
+                        <rect class="pages_stroke_rect" x="0.3%" y="0.5%"></rect>
+                        <text class="pages_rect_text" x="5%" y="2%">Home</text>
+                    </g>
+                </a>
 
-            <rect x="400" y="180" width="100" height="40" fill="#795548" stroke="#333" rx="5" />
-            <text x="420" y="205" fill="white" font-size="14">Our Team</text>
+                <a xlink:href="../statistics/statistics.html" target="_blank">
+                    <g transform="translate(21,5)" class="parent_nodes">
+                        <rect class="pages_rect" x="0%" y="0%"></rect>
+                        <rect class="pages_stroke_rect" x="0.3%" y="0.5%"></rect>
+                        <text class="pages_rect_text" x="5%" y="2%">Statistics</text>
+                    </g>
+                </a>
 
-            <rect x="250" y="260" width="100" height="40" fill="#607D8B" stroke="#333" rx="5" />
-            <text x="270" y="285" fill="white" font-size="14">Sitemap</text>
 
-            <!-- Profile Sections -->
-            <rect x="250" y="320" width="100" height="40" fill="#FFC107" stroke="#333" rx="5" />
-            <text x="270" y="345" fill="black" font-size="12">About</text>
+                <a xlink:href="../ourTeam/ourTeam.html" target="_blank">
+                    <g transform="translate(37,5)" class="parent_nodes">
+                        <rect class="pages_rect" x="0%" y="0%"></rect>
+                        <rect class="pages_stroke_rect" x="0.3%" y="0.5%"></rect>
+                        <text class="pages_rect_text" x="5%" y="2%">Our Team</text>
+                    </g>
+                </a>
 
-            <rect x="250" y="370" width="100" height="40" fill="#FFC107" stroke="#333" rx="5" />
-            <text x="270" y="395" fill="black" font-size="12">Skills</text>
 
-            <rect x="250" y="420" width="100" height="40" fill="#FFC107" stroke="#333" rx="5" />
-            <text x="270" y="445" fill="black" font-size="12">Calendar</text>
+                <a xlink:href="../volunteer/volunteer.html" target="_blank">
+                    <g transform="translate(53,5)" class="parent_nodes">
+                        <rect class="pages_rect" x="0%" y="0%"></rect>
+                        <rect class="pages_stroke_rect" x="0.3%" y="0.5%"></rect>
+                        <text class="pages_rect_text" x="5%" y="2%">Volunteer</text>
+                    </g>
+                </a>
 
-            <!-- Connecting Lines -->
-            <line x1="300" y1="60" x2="300" y2="100" stroke="#333" stroke-width="2" />
-            <line x1="300" y1="140" x2="300" y2="180" stroke="#333" stroke-width="2" />
-            <line x1="300" y1="220" x2="300" y2="260" stroke="#333" stroke-width="2" />
-            <line x1="300" y1="300" x2="300" y2="320" stroke="#333" stroke-width="2" />
-            <line x1="300" y1="360" x2="300" y2="370" stroke="#333" stroke-width="2" />
-            <line x1="300" y1="410" x2="300" y2="420" stroke="#333" stroke-width="2" />
-        </svg>
+                <a xlink:href="../profile/profile.html" target="_blank">
+                    <g transform="translate(69,5)" class="parent_nodes">
+                        <rect class="pages_rect" x="0%" y="0%"></rect>
+                        <rect class="pages_stroke_rect" x="0.3%" y="0.5%"></rect>
+                        <text class="pages_rect_text" x="5%" y="2%">Profile</text>
+                    </g>
+                </a>
+
+
+                <a xlink:href="../feedback/feedback.html" target="_blank">
+                    <g transform="translate(85,5)" class="parent_nodes">
+                        <rect class="pages_rect" x="0%" y="0%"></rect>
+                        <rect class="pages_stroke_rect" x="0.3%" y="0.5%"></rect>
+                        <text class="pages_rect_text" x="5%" y="2.2%">Feedback</text>
+                    </g>
+                </a>
+
+                <!-- Home -->
+                <line x1="6%" y1="14%" x2="6%" y2="82%" class="connector" />
+
+                <line x1="6%" y1="22%" x2="7%" y2="22%" class="connector" />
+                <line x1="6%" y1="32%" x2="7%" y2="32%" class="connector" />
+                <line x1="6%" y1="42%" x2="7%" y2="42%" class="connector" />
+                <line x1="6%" y1="54%" x2="7%" y2="54%" class="connector" />
+                <line x1="6%" y1="68%" x2="7%" y2="68%" class="connector" />
+                <line x1="6%" y1="82%" x2="7%" y2="82%" class="connector" />
+
+                <g transform="translate(7,10)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Overview</text>
+                </g>
+
+                <g transform="translate(7,15)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Our Mission</text>
+                </g>
+
+                <g transform="translate(7,20)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Ocean Pollution</text>
+                </g>
+
+                <g transform="translate(7,25)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C" id="big_node"></rect>
+                    <text class="node_rect_text" x="5%" y="2.5%">Marine Life</text>
+                    <text class="node_rect_text" x="5%" y="5%">Conservation</text>
+                </g>
+
+                <g transform="translate(7,32)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C" id="big_node"></rect>
+                    <text class="node_rect_text" x="5%" y="2.5%">Sustainable</text>
+                    <text class="node_rect_text" x="5%" y="5%">Fishing</text>
+                </g>
+
+                <g transform="translate(7,39)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C" id="big_node"></rect>
+                    <text class="node_rect_text" x="5%" y="2.5%">Coral Reef</text>
+                    <text class="node_rect_text" x="5%" y="5%">Protection</text>
+                </g>
+
+                <!-- Statistics -->
+                <line x1="26%" y1="14%" x2="26%" y2="20%" class="connector" />
+
+                <!-- <line x1="22%" y1="24%" x2="23%" y2="24%" class="connector" /> -->
+
+                <g transform="translate(21,10)" class="nodes" id="big_node">
+                    <rect class="node_rect" x="0%" y="0%" fill="#06C07C" id="big_node"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Marine </text>
+                    <text class="node_rect_text" x="5%" y="4%">Conservation </text>
+                    <text class="node_rect_text" x="5%" y="6%">Data</text>
+                </g>
+
+                <!-- Our Team -->
+                <line x1="38%" y1="14%" x2="38%" y2="66%" class="connector" />
+
+                <line x1="38%" y1="22%" x2="39%" y2="22%" class="connector" />
+                <line x1="38%" y1="32%" x2="39%" y2="32%" class="connector" />
+                <line x1="38%" y1="42%" x2="39%" y2="42%" class="connector" />
+                <line x1="38%" y1="54%" x2="39%" y2="54%" class="connector" />
+                <line x1="38%" y1="66%" x2="39%" y2="66%" class="connector" />
+
+                <g transform="translate(39,10)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#ffb703"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">The Team</text>
+                </g>
+
+                <g transform="translate(39,15)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#ffb703"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Feedback</text>
+                </g>
+
+                <g transform="translate(39,20)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#ffb703"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Vission/Mission</text>
+                </g>
+
+                <g transform="translate(39,25)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#ffb703" id="big_node"></rect>
+                    <text class="node_rect_text" x="5%" y="3%">Why we do</text>
+                    <text class="node_rect_text" x="5%" y="6%">what we do?</text>
+                </g>
+
+                <g transform="translate(39,32)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#ffb703"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Join us</text>
+                </g>
+
+
+                <!-- Volunteer -->
+                <line x1="54%" y1="14%" x2="54%" y2="46%" class="connector" />
+
+                <line x1="54%" y1="24%" x2="55%" y2="24%" class="connector" />
+                <line x1="54%" y1="36%" x2="55%" y2="36%" class="connector" />
+                <line x1="54%" y1="46%" x2="55%" y2="46%" class="connector" />
+
+                <g transform="translate(55,10)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#FF6B6B" id="big_node"></rect>
+                    <text class="node_rect_text" x="5%" y="3%">Explore</text>
+                    <text class="node_rect_text" x="5%" y="6%">Opportunities</text>
+                </g>
+
+                <g transform="translate(55,17)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#FF6B6B"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Recent Reviews</text>
+                </g>
+
+                <g transform="translate(55,22)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#FF6B6B"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Send Feedback</text>
+                </g>
+
+                <!-- Profile -->
+                <line x1="70%" y1="14%" x2="70%" y2="76%" class="connector" />
+
+                <line x1="70%" y1="22%" x2="71%" y2="22%" class="connector" />
+                <line x1="70%" y1="32%" x2="71%" y2="32%" class="connector" />
+                <line x1="70%" y1="42%" x2="71%" y2="42%" class="connector" />
+                <line x1="70%" y1="54%" x2="71%" y2="54%" class="connector" />
+                <line x1="70%" y1="66%" x2="71%" y2="66%" class="connector" />
+                <line x1="70%" y1="76%" x2="71%" y2="76%" class="connector" />
+
+                <a xlink:href="../profile/profile.html#about-me" target="_blank">
+                    <g transform="translate(71,10)" class="nodes">
+                        <rect class="node_rect" x="0%" y="0%" fill="#90E0EF"></rect>
+                        <text class="node_rect_text" x="5%" y="2.2%">About me</text>
+                    </g>
+                </a>
+
+                <a xlink:href="../profile/profile.html#personal-details" target="_blank">
+                    <g transform="translate(71,15)" class="nodes">
+                        <rect class="node_rect" x="0%" y="0%" fill="#90E0EF"></rect>
+                        <text class="node_rect_text" x="5%" y="2.2%">Personal Details</text>
+                    </g>
+                </a>
+
+                <g transform="translate(71,20)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#90E0EF"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Interests</text>
+                </g>
+
+                <a xlink:href="../profile/profile.html#volunteering-availability" target="_blank">
+                    <g transform="translate(71,25)" class="nodes">
+                        <rect class="node_rect" x="0%" y="0%" fill="#90E0EF" id="big_node"></rect>
+                        <text class="node_rect_text" x="5%" y="3%">Volunteering</text>
+                        <text class="node_rect_text" x="5%" y="6%">Availability</text>
+                    </g>
+                </a>
+
+                <g transform="translate(71,32)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#90E0EF"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">UN Goals</text>
+                </g>
+
+                <g transform="translate(71,37)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#90E0EF"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">Contact Form</text>
+                </g>
+
+
+                <!-- Feedback -->
+                <line x1="86%" y1="14%" x2="86%" y2="22%" class="connector" />
+
+                <line x1="86%" y1="22%" x2="87%" y2="22%" class="connector" />
+
+                <g transform="translate(87,10)" class="nodes">
+                    <rect class="node_rect" x="0%" y="0%" fill="#ffb703"></rect>
+                    <text class="node_rect_text" x="5%" y="2.2%">About me</text>
+                </g>
+
+            </svg>
+
+        </div>
     </div>
 </section>
