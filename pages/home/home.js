@@ -1,10 +1,10 @@
 const cardData = [
     {
-        imgSrc: "../../assets/images/home/pollution.jpg",
+        imgSrc: "./../content-pages/Student1/Images/polution 4.jpg",
         altText: "Ocean Pollution",
         title: "Ocean Pollution",
         desc: "Marine pollution is a combination of chemicals and trash, most of which comes from land sources and is washed or blown into the ocean.",
-        link: "#"
+        link: "./../content-pages/Student1/ocean-polution.html"
     },
     {
         imgSrc: "../../assets/images/home/marine.jpg",
@@ -14,11 +14,11 @@ const cardData = [
         link: "./../content-pages/student2/marine-life-conservation.html"
     },
     {
-        imgSrc: "../../assets/images/home/sus.jpg",
-        altText: "Sustainable Fishing",
-        title: "Sustainable Fishing",
+        imgSrc: "./../content-pages/Student4/Images/sustainable-fishin.jpg",
+        altText: "Sustainable - Fishing",
+        title: "Sustainable  Fishing",
         desc: "Catching fish in a way that maintains healthy fish populations, while also supporting the communities that depend on fishing.",
-        link: "#"
+        link: "./../content-pages/Student4/sustainable-fishing.html"
     },
     {
         imgSrc: "../../assets/images/home/coral-light_orig.jpg",
