@@ -31,13 +31,9 @@ section {
 }
 header, footer {
     text-align: center;
-    background-color: var(--dark-blue);
+    background-color: #0077B6;
     color: white;
     padding: 10px 0;
-}
-
-.header h1 {
-    font-family: "Pilated Free", sans-serif;
 }
 
 .ref li{
@@ -53,25 +49,10 @@ aside li{
     padding-bottom: 4px;
 }
 
-h2 {
-    font-weight: 550;
-    color: var(--primary-blue);
-}
-
-h3 {
-    font-weight: 100;
-    color: var(--dark-blue);
-    font-size: 20px !important;
-}
-
-p {
-    text-align: justify;
-}
-
 .stud {
     text-align: center;
     line-height: 0;
-    background-color: #cbccc2ef;
+    background-color:  #8ECAE6;
     color: white;
     margin-top: 8px;
 }
@@ -83,13 +64,13 @@ p {
 }
         
 .top a {
-    padding: 10px 20px; /* Adds padding for button-like feel */
-    background-color: var(--dark-blue); /* Button color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 20px; /* Rounds the corners */
-    font-size: 12px; /* Adjust font size */
-    font-weight: bold; /* Make the text stand out */
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    font-weight: bold; 
 }
 
 .top a:hover {
@@ -99,4 +80,12 @@ p {
 
 img{
     width: 90%;
+}
+
+.heading{
+    font-family: 'Pilated Free', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
 }
