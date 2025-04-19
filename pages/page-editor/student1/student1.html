@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Editor Student-1</title>
 
-    <link rel="stylesheet" href="/student1.css">
+    <link rel="stylesheet" href="../../page-editor/student1/student1.css">
     <link rel="stylesheet" href="../../styles/style.css"> <!-- External CSS link -->
 
 </head>
@@ -19,7 +18,7 @@
     </header>
 
     <section class="stu">
-        <h2>Noor Nifla, Student 1</h2>
+        <h2>Noor Nifla, Role- Student 1 (20234020)</h2>
     </section>
 
     <div class="container">
@@ -63,62 +62,135 @@
                         </p>
                     
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <a href="../../page-editor/student1/validation.html">Validation page</a> 
 
-                    <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                    <h3>Link to the Splash screen page</h3>
+                        <p><a href="../../splashscreen/splashscreen.html" target="_blank">Splash Screen.</a></p>
             </section>
 
             <section>
                 <h2 id="volunteer">Volunteer Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                        <p>This webpage was implemented using HTML and CSS to create a structured and visually appealing
+                             volunteer opportunities page. The HTML structure includes a header section with a dropdown for sorting, 
+                             a scrollable card section showcasing volunteer opportunities, a review section, and a feedback form. 
+                             The card layout is designed using div containers, with image elements, text headings (h3, h4), 
+                             and buttons (a.btn) for interaction. The CSS enhances the design by using flexbox for layout organization,
+                              scroll-snap-type for a smooth horizontal scrolling experience, and box-shadow to create depth in the card 
+                              designs. The use of a consistent color palette and border-radius improves aesthetics, 
+                              while hover effects (:hover) on buttons and icons enhance user engagement.
+                        </p> 
 
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <p>Accessibility is addressed by ensuring proper text contrast, scalable fonts (rem, em), and semantic HTML elements
+                             (h2, p, button, select) for better screen reader support. The alt attributes in images ensure visually impaired 
+                             users can understand the content. The scrollable container is designed with scroll-snap-type, providing a 
+                             smooth navigation experience for keyboard users. The feedback section uses interactive elements (button, textarea) 
+                             that are easy to navigate, and the star rating system provides a visual representation of user reviews. 
+                             The site is also responsive (@media queries),ensuring it is accessible across different screen sizes and devices.
+                        </p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                    <h3>Link to the Validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <a href="../../page-editor/student1/validation.html">Validation page</a>
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="../../volunteer/volunteer.html" target="_blank">Volunteer page.</a></p>
             </section>
 
             <section>
-                <h2 id="content">Content Page</h2>
+                <h2 id="content">Content Page-Ocean Pollution</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                        <p>In developing this webpage, I used several fundamental HTML tags to ensure a well-structured and organized 
+                            layout. The  &lt;html&gt; tag serves as the root element, while the  &lt;head&gt; section contains metadata, including links
+                            to external stylesheets and Font Awesome icons. The  &lt;body&gt; holds the main content, where I used  &lt;section&gt;, 
+                            &lt;div&gt;, and  &lt;p&gt; tags to divide the webpage into meaningful sections. 
+                            The  &lt;h1&gt;, &lt;h2&gt; and  &lt;h3&gt; tags help establish a clear hierarchy, making the content easy to navigate. 
+                            Additionally, I included a navigation bar with  &lt;nav&gt; and  &lt;a&gt; elements to allow users to jump between 
+                            different sections seamlessly. The  &lt;button&gt; tag is also used to encourage user interaction, such as taking 
+                            action against ocean pollution.<br>
+                            For styling, I applied various CSS properties to enhance the visual appeal and improve user experience. 
+                            The background-image property in the .entry-container class adds a compelling ocean pollution image, 
+                            reinforcing the theme. I used display: flex in multiple sections, such as .navbar and .solutions-container,
+                            to align elements efficiently. The color, font-size, and font-weight properties ensure that text is readable,
+                            while border-radius and transition enhance the interactive elements like buttons. 
+                            To maintain consistency across devices, I implemented @media queries, making the layout responsive 
+                            for different screen sizes. These styling choices ensure that the webpage remains both visually engaging 
+                            and user-friendly.
+                        </p> 
 
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <p>While developing this webpage, I took several measures to ensure it is accessible to all users, 
+                           including those with disabilities. First, I specified lang="en" in the  &lt;html&gt; tag, enabling screen readers 
+                           to correctly interpret the language of the content. 
+                           I structured the page using appropriate heading tags ( &lt;h1&gt;,  &lt;h2&gt;, and  &lt;h3&gt;) to maintain a logical flow, 
+                           making it easier for assistive technologies to navigate. Navigation links were placed in a  &lt;nav&gt; section 
+                           to ensure easy access to different parts of the webpage.<br>
+                           Additionally, I provided alt attributes for all images, allowing visually impaired users to understand the 
+                           visual content through screen readers.
+                           I also considered color contrast to improve readability for users with visual impairments. 
+                           The text colors were carefully chosen to stand out against the background, ensuring clarity. 
+                           The buttons and links were styled with clear hover effects using transition, making them easily distinguishable. 
+                           I also ensured that interactive elements, such as buttons and links, could be accessed using the keyboard. 
+                           Furthermore, I implemented responsive design with @media queries so that users on different devices, 
+                           including those using screen magnifiers, could view the content comfortably. 
+                           These accessibility features help create an inclusive and user-friendly experience for all visitors.
+                        </p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                    <h3>Link to the Validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <a href="../../page-editor/student1/validation.html">Validation page</a>
 
                         
-                    <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                    <h3>Link to the Content page - Ocean Pollution</h3>
+                        <p><a href="../../content-pages/Student1/ocean-polution.html" target="_blank">Content Page About Ocean Pollution.</a></p>
             </section>
 
             <section>
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                    <p>During the implementation of this project, one of the main challenges we faced was coordinating work among team members. 
+                       Since this was a group project, different individuals had different ideas about design choices, coding practices, and 
+                       overall structure. At times, disagreements arose regarding the layout and styling elements, leading to inconsistencies 
+                       in the code. Additionally, merging different sections of the project proved to be difficult, as conflicting changes 
+                       in HTML and CSS files caused errors and formatting issues. To resolve these conflicts, we improved our communication and 
+                       established a clear workflow. We decided to divide tasks more effectively and regularly update each other through meetings. 
+                       Using version control Git, also helped us track changes and prevent accidental overwrites of code.<br>
+                       Another major challenge was ensuring responsiveness and accessibility while maintaining a visually appealing 
+                       design. Some team members initially focused more on aesthetics, while others prioritized functionality, causing a 
+                       disconnect in the final product. To address this, we conducted testing on different screen sizes and devices, adjusting 
+                       CSS properties like flexbox and media queries accordingly. We also had discussions to balance design and accessibility 
+                       needs, making sure the website was both visually engaging and user friendly.</p> 
             </section>
 
             <section>
                 <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+                    <p>During the development of our web pages, we primarily focused on creating a visually engaging and informative website rather 
+                       than strictly adhering to specific regulations such as Janet regulations. However, many of the best practices we followed 
+                       align with key aspects of responsible web development. For instance, we ensured that our content was appropriate for public 
+                       access, avoided any copyrighted material by using properly sourced images, and maintained a structure that promotes clarity 
+                       and accessibility.<br>
+                       That being said, we recognize that compliance with Janet regulations involves more than just these considerations. 
+                       Going forward, we would need to pay closer attention to aspects like data protection, user privacy, and security, 
+                       ensuring that any forms or interactive elements comply with ethical guidelines. If we were to expand this project, 
+                       we would conduct further research into Janet’s specific requirements, particularly regarding accessibility, responsible 
+                       content management, and online safety. This experience has highlighted the importance of understanding web regulations 
+                       to create responsible and legally compliant digital content.
+                    </p> 
 
                     
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                <p>Following are the links to the references that I used to design my pages.<br><br>
                     <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 08 March 2025).</li>
+                        <li>figma (2025) <i>figma.</i> Available at: <a href="#">https://www.figma.com/design/3tEoE4fuXTpIRHqfT831fp/Web-CW-(Copy)?node-id=0-1&p=f&t=lQ8MkG2IAAURelS6-0</a> (Last accessed: 10 March 2025).</li>
+                        <li>W3Schools (2025) <i>W3Schools.</i> Available at: <a href="#">https://www.w3schools.com/</a> (Last accessed: 09 March 2025).</li>
+                        <li>colorib (2024) <i>colorib.</i> Available at: <a href="#">https://colorlib.com/wp/themes/</a> (Last accessed: 08 March 2025).</li>
+                        <li>pixabay (2025) <i>pixabay.</i> Available at: <a href="#">https://pixabay.com/photos/search/underwater%20ocean/</a> (Last accessed: 07 March 2025).</li>
+                        <li>browserstack (2025) <i>BrowserStack.</i> Available at: <a href="#">https://www.browserstack.com/guide/build-a-website-using-html-css</a> (Last accessed: 07 March 2025).</li>
+                        <li>css-tricks (2023) <i>CSS-Tricks.</i> Available at: <a href="#">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> (Last accessed: 09 March 2025).</li>
+
                     </ul>
             </section>
 
@@ -138,24 +210,7 @@
                         <li><a href="#volunteer">Volunteer page</a></li>
                         <li><a href="#content">Content page</a></li>
                     </ul>
-                <li>Student 2</li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li>Student 3</li>
-                    <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
-                <li>Student 4</li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
                 <li><a href="#ref">References</a></li>
@@ -163,8 +218,6 @@
         </aside>
     </div>
 
-    <footer>
-        <p>Replace the footer with your teams' website footer</p>
-    </footer>
+    
 </body>
 </html>

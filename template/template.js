@@ -38,5 +38,19 @@ function loadPage(page) {
 }
 
 window.onload = function () {
-    loadPage('home');
+    const contentContainer = document.getElementById('content-container');
+
+    const splashIframe = document.createElement('iframe');
+    splashIframe.src = './../../Life-Below-Water/pages/splashscreen/splashscreen.html';
+    splashIframe.style.width = "100%";
+    splashIframe.style.border = "none";
+    splashIframe.style.height = "100vh";
+
+    contentContainer.innerHTML = '';
+    contentContainer.appendChild(splashIframe);
+
+    // Load home page after 4 seconds (4000ms)
+    setTimeout(() => {
+        loadPage('home');
+    }, 4000);
 };
