@@ -1,74 +1,106 @@
 @import url("https://fonts.cdnfonts.com/css/pilated-free");
 * {
-    margin: 0;
+  margin: 0;
 }
 
 .sitemap_content {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 .sitemap_h3 {
-    font-size: 1.5px;
-    fill: var(--primary-blue);
-    font-family: var(--font-primary);
-    text-anchor: middle;
+  font-size: 1.5px;
+  fill: var(--primary-blue);
+  font-family: var(--font-primary);
+  text-anchor: middle;
+  margin-top: 5rem;
 }
 
-.parent_nodes, .nodes {
-    cursor: pointer;
+.parent_nodes,
+.nodes {
+  cursor: pointer;
 }
 
 .pages_rect {
-    fill: var(--primary-blue);
-    width: 10%;
-    height: 4%;
-    rx: 0.5;
+  fill: var(--primary-blue);
+  width: 10%;
+  height: 4%;
+  rx: 0.5;
 }
 
 .parent_nodes:hover .pages_stroke_rect {
-    fill: var(--primary-blue);
-    width: 9.5%;
-    height: 3%;
-    rx: 0.3;
-    stroke-width: 0.1px;
-    stroke: whitesmoke;
+  fill: var(--primary-blue);
+  width: 9.5%;
+  height: 3%;
+  rx: 0.3;
+  stroke-width: 0.1px;
+  stroke: whitesmoke;
 }
 
 .node_rect {
-    width: 10%;
-    height: 4%;
-    rx: 0.5;
+  width: 10%;
+  height: 4%;
+  rx: 0.5;
 }
 
 .pages_rect_text {
-    fill: white;
-    font-size: 1.3px;
-    font-family: var(--font-primary);
-    text-anchor: middle;
-    dominant-baseline: middle;
+  fill: white;
+  font-size: 1.3px;
+  font-family: var(--font-primary);
+  text-anchor: middle;
+  dominant-baseline: middle;
 }
 
 .node_rect_text {
-    fill: var(--primary-blue);
-    font-size: 1.2px;
-    font-weight: 600;
-    font-family: var(--font-primary);
-    text-anchor: middle;
-    dominant-baseline: middle;
+  fill: var(--primary-blue);
+  font-size: 1.2px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  text-anchor: middle;
+  dominant-baseline: middle;
 }
 
 .nodes:hover .node_rect {
-    stroke: var(--primary-blue);
-    stroke-width: 0.1px;
+  stroke: var(--primary-blue);
+  stroke-width: 0.1px;
 }
 
 .connector {
-    stroke: var(--primary-blue); /* Dark blue stroke color */
-    fill: none;
-    stroke-width: 0.1;
+  stroke: var(--primary-blue); /* Dark blue stroke color */
+  fill: none;
+  stroke-width: 0.1;
 }
 
 #big_node {
-    height: 8%;
+  height: 8%;
 }
+a:focus {
+  outline: none;  
+  
+}
+
+.svg-link:focus .pages_rect_text {
+    fill: #ffcc00; /* Highlight color on focus */
+    text-decoration: underline;
+}
+
+.svg-link:focus .node_rect_text {
+    text-decoration: underline; /* Highlight color on focus */
+}
+
+/* .focus-ring {
+    stroke: none;
+    fill: none;
+    pointer-events: none;
+  }
+
+  
+  
+  .svg-link:focus .focus-ring {
+    stroke: firebrick;
+    stroke-width: 0.3;
+    fill: none;
+  } */
+  
+  
+
 
